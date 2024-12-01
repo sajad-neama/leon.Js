@@ -1,6 +1,6 @@
 /* variables */
 :root {
-    --main-color: #cbad00; 
+    --main-color: #cbad00;
     --second-color: #2c4755;
 
 }
@@ -17,9 +17,9 @@
 
 
 /* import all media  */
-@media (min-width : 768px) {
+@media (max-width : 768px) {
     .container {
-        width: 750px;
+        width: 740px;
     }
 }
 
@@ -44,77 +44,94 @@ body {
 }
 
 
-.par{
+.par {
     background-color: rgb(255, 255, 255);
-    width: 150px;
     height: 100vh;
     z-index: 10;
     position: fixed;
+    width: 150px;
     left: -150px;
-    transition: 1s;
     box-shadow: 11px 0px 43px -10px gray;
     padding: 15px;
-    .icon{
-        transition: 1s;
-        background-color:var(--main-color);
-        width: 20px ;
-        height: 20px ;
+    transition: 0.6s;
+
+    .icon {
+        background-color: var(--main-color);
         z-index: 200;
         position: fixed;
-        left: 0px;
+        width: 20px;
+        height: 20px;
         top: 100px;
+        transition: 0.6s;
+        left: 0px;
         cursor: pointer;
     }
-    .colorpar{
+
+    .colorpar {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        .textpar{
-            font-size: 10px;
-            margin: 20px ;
-            margin-bottom: 10px;
+
+        .textpar {
+            font-size: 20px;
+            margin: 40px;
+            margin-bottom: 20px;
             text-wrap: nowrap;
         }
-        /* .color{
-            margin: 5px;
-            background-color: black;
-            width: 20px;
-            height: 20px;
+
+        span {
+            margin: 10px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             cursor: pointer;
-        } */
-        #orang{
+        }
+
+        #orang {
             background-color: #cbad00;
-            margin: 5px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            cursor: pointer;
         }
-        #red{
+
+        #red {
             background-color: #d14e4e;
-            margin: 5px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            cursor: pointer;
         }
-        #green{
+
+        #green {
             background-color: #10cab7;
-            margin: 5px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            cursor: pointer;
         }
     }
 }
+
+@media(max-width : 992px) {
+    .par {
+        width: 250px;
+        left: -250px;
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            top: 200px;
+        }
+    }
+}
+
 .par:hover {
-    left:0px;
-    .icon{
+    left: 0px;
+
+    .icon {
         left: 150px;
     }
 }
+
+@media(max-width : 992px) {
+    .par:hover {
+        left: 0px;
+
+        .icon {
+            left: 250px;
+        }
+    }
+}
+
 
 
 /* start haeder  */
@@ -200,21 +217,24 @@ body {
     width: 60px;
     visibility: hidden;
 }
-.logoSpan{
+
+.logoSpan {
     width: 30px;
     height: 30px;
-    border: 5px var(--main-color) solid ;
+    border: 5px var(--main-color) solid;
     border-radius: 50%;
-    position: absolute  ;
+    position: absolute;
     background-color: white;
     margin-left: 10px;
 }
-.ISpan{
+
+.ISpan {
     height: 30px;
     border-left: 5px solid var(--second-color);
     position: absolute;
-    
+
 }
+
 .header .links .icon {
     width: 35px;
     display: flex;
@@ -270,6 +290,11 @@ body {
     font-size: 18px;
 }
 
+@media(max-width : 992px) {
+    .landeng {
+        height: calc(50vh - 60px);
+    }
+}
 
 /* end landeng section */
 
