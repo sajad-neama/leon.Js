@@ -19,13 +19,13 @@
 /* import all media  */
 @media (max-width : 768px) {
     .container {
-        width: 740px;
+        width: 733px;
     }
 }
 
 @media (min-width : 992px) {
     .container {
-        width: 970px;
+        width: 950px;
     }
 }
 
@@ -53,18 +53,25 @@ body {
     left: -150px;
     box-shadow: 11px 0px 43px -10px gray;
     padding: 15px;
-    transition: 0.6s;
+    transition: 0.5s;
 
-    .icon {
-        background-color: var(--main-color);
+    .iconn {
+        color: var(--main-color);
+        background-color: white;
         z-index: 200;
         position: fixed;
-        width: 20px;
-        height: 20px;
         top: 100px;
-        transition: 0.6s;
+        transition: 0.5s;
         left: 0px;
         cursor: pointer;
+        border-radius: 50;
+        padding: 3px;
+        border-radius: 0px 3px 3px 0px;
+        box-shadow: 4px 0px 8px 0px gray;
+    }
+
+    .evantt {
+        left: 150px;
     }
 
     .colorpar {
@@ -73,30 +80,37 @@ body {
         justify-content: center;
 
         .textpar {
-            font-size: 10px;
+            font-size: 20px;
             margin: 20px;
             margin-bottom: 10px;
             text-wrap: nowrap;
         }
 
-        .color {
-            margin: 5px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            cursor: pointer;
+        ul {
+            display: flex;
+            position: relative;
+            margin-right: 40px;
         }
 
-        #orang {
+        .color {
+            margin: 5px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .orang {
             background-color: #cbad00;
 
         }
 
-        #red {
+        .red {
             background-color: #d14e4e;
         }
 
-        #green {
+        .green {
             background-color: #10cab7;
 
         }
@@ -108,30 +122,29 @@ body {
         width: 250px;
         left: -250px;
 
-        .icon {
-            width: 40px;
-            height: 40px;
+        .iconn {
+            padding: 10px;
+            font-size: 40px;
             top: 200px;
         }
 
         .colorpar .textpar {
-            font-size: 20px;
+            font-size: 35px;
             margin: 40px;
             margin-bottom: 20px;
             text-wrap: nowrap;
         }
 
-        span {
-            margin: 10px;
-            width: 40px;
+        ul .color {
+            width: 70px;
             height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
         }
+
+
     }
 }
 
-.par:hover {
+.evant {
     left: 0px;
 
     .icon {
@@ -140,23 +153,16 @@ body {
 }
 
 @media(max-width : 992px) {
-    .par:hover {
+    .evant {
         left: 0px;
 
-        .icon {
+        .iconn {
             left: 250px;
         }
     }
 }
 
-@media(max-width : 992px) {}
-
-
-
-
 /* start haeder  */
-
-
 
 .container {
 
